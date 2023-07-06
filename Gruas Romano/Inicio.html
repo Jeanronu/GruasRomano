@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+       <meta charset="UTF-8">
+        <Title>Inicio de Sesion</Title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="shortcut icon" type="image/x-icon" href="img/icon.png">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        
+    </head>
+    <style>
+    body{
+            background-color:orangered;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form{
+        width: 400px;
+        margin:auto;
+        background:black;
+        padding:25px 25px;
+        box-sizing:border-box;
+        margin-top: 20px;
+        border-radius: 10px;}
+
+
+        h1{
+        color:white;
+        text-align: center;
+        margin-bottom:10px ;
+    }
+
+     label{
+        color:white;
+        text-align: center;
+        padding:2px;
+     }
+
+
+   
+     input{
+         width:100%;
+         margin-bottom: 8px;
+        padding: 8px;
+        box-sizing: border-box;
+        font-size: 20px;
+        border: none;
+     }
+      
+    
+
+    #Buttom{
+        width:100%;
+        color: white;
+        background:blue;
+        padding: 16px;
+    }
+    #Buttom:hover{
+        cursor: pointer;
+    }
+
+
+   </style>
+    <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-3">
+            <div class="page-header text-center"> 
+            <center>
+             <h1>Inicio de Sesion</h1>
+            </center>
+            <center>
+             <h2 class="Form-signin-heading"> Por favor acceda a su cuenta</h2>
+            </center>
+             </div>
+             <form class="Form-signin" method="post" action="Sesion.php">
+            <center>
+            <label for="Usuario" class="sr-only">Usuario</label>
+            </center>
+            <input type="text" name="Usuario" class="form-control" placeholder="Nombre de usuario" required 
+            autofocus>
+            <br>
+            <center>
+            <label for="Contraseña" class="sr-only">Contraseña</label>
+            </center>
+            <input type="password" name="Contraseña" class="form-control" placeholder="Contraseña" required>
+            <form  method="post" action="Sesion.php">
+            <input type="submit" name="submit" value="Log in" id="Buttom" />
+             </form>
+             </form>
+            </div>
+
+        </div>
+
+    </div>
+    </body>
+       
+
+</html>

@@ -1,0 +1,10 @@
+<?php 
+session_start();
+if($_SESSION['usuario']){	
+	session_destroy();
+	header("location:inicio_sesión.html");
+}
+else{
+	header("location:ServiciosRomanos.html");
+}
+?>

@@ -1,0 +1,158 @@
+#header {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    overflow: hidden;
+}
+
+#header nav {
+    background: #f12711;  
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711); 
+    background: linear-gradient(to right, #f5af19, #f12711); 
+    display: flex;
+    justify-content: space-evenly;
+    position: sticky;
+}
+
+#header h1{
+    color: #fff;
+    font-size:200%;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    margin: 2%;
+}
+
+#header .icono {
+    display: none;
+}
+
+#header .enlaces {
+    margin: 2%;
+    float: right;
+    text-align: center;
+    display: flex;
+    height: 100%;
+    width: 30%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#header .enlaces a{
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    padding: 4px 0;
+    transition: 0.7s ease-out;
+    color: #fff;
+    text-decoration: none;
+}
+
+#header .enlaces a:hover,
+.active {
+    border-top: 2px solid rgb(0, 247, 255);
+    border-bottom: 2px solid rgb(0, 247, 255);
+}
+
+/*lista*/
+#header ul, li{
+    list-style: none;
+    display: block;
+}
+
+#header  li ul{
+    display: none;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -20px;
+}
+
+#header li:hover > ul{
+    display: block;
+    background: #f12711;  
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711); 
+    background: linear-gradient(to right, #f5af19, #f12711); 
+    padding: 20px;
+    position: fixed;
+    color: white;
+}
+
+#header .hi li{
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width:850px) {
+    #header .icono {
+        display: flex;
+        font-size: 200%;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        background: transparent;
+        padding: 2%;
+        z-index: 100;
+        cursor: pointer;
+    }
+
+    #header .enlaces {
+        position: fixed;
+        height: 100%;
+        right: 0;
+        margin-top: 8%;
+        margin-right: 0;
+        width: 100%;
+        z-index: 100;
+        flex-direction: column;
+        transition: all 1s ease;
+        background: #f46b45;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #eea849, #f46b45);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #eea849, #f46b45);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    #header li ul{
+        display: block;
+        padding: 20px;
+        position: fixed;
+        color: white;
+    }
+
+    #header li:hover > ul{
+        background:none;
+    }
+
+    #header .uno {
+
+        -webkit-clip-path: circle(0% at 100% 0%);
+        clip-path: circle(0% at 100% 0%);
+
+    }
+
+    #header .dos {
+
+        -webkit-clip-path: circle(150% at 100% 0%);
+        clip-path: circle(150% at 100% 0%);
+
+    }
+
+    #header .enlaces a:hover,
+    #header  .active {
+    background: rgba(192, 190, 190, 0.61);
+    border-top: 2px solid rgb(0, 38, 255);
+    border-bottom: 2px solid rgb(0, 38, 255);
+    }
+}
+
+@media screen and (max-width:670px){
+
+    #header .icono{
+        font-size: 100%;
+    }
+    #header .enlaces{
+        margin-top: 8%;
+    }
+    #header h1{
+        font-size: 100%;
+    }
+}

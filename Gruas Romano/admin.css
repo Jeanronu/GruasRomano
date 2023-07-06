@@ -1,0 +1,30 @@
+body{
+    margin: auto;
+    align-items: center;
+    background-color: goldenrod;
+}
+
+table{
+    background-color: wheat;
+    margin: auto;
+}
+h2{
+    color:white;
+    font-size:45px;
+    text-align: center;
+}
+a{
+    display: inline;
+    margin: 20px;
+    color: white;
+    text-align: right;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar{
+    background-color:red ;
+    font-size: 25px;
+    height: 50px;
+
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/form.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/Header.css">
+	<link href="http://fontello.com/" rel="stylesheet">
+	<link rel="shortcut icon" href="Imagenes/icon.png">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider({
+    	touch: true,
+    	pauseOnAction: false,
+    	pauseOnHover: false,
+    });
+  });
+</script>
+</head>
+<body>
+	<header id="header" style="margin-top: -100px;">
+        <nav>
+            <h1  class="icon-cog-alt">Servicios Romano</h1>
+            <div class="icono" id="icono">
+                <span>&#9776;</span>
+            </div>
+            <div class="enlaces uno" id="enlaces">
+                <a href="ServiciosRomano.html#slider"><span class="icon-home">Inicio</span></a>
+                <li><a href="ServiciosRomano.html#nosotros" class="icon-help-circled">Nosotros</a>
+					<ul class="hi">
+				<center>
+                    <li class="icon-truck"><a href="ServiciosRomano.html#equipos">Equipos</li>
+					<li class="icon-child"><a href="ServiciosRomano.html#clientes">Clientes</li>
+					<li class="icon-wrench"><a href="ServiciosRomano.html#servicios">Servicios</li>
+                    <li class="icon-users"><a href="ServiciosRomano.html#contactos">Contactos</li></center>
+                    </ul>
+                </li>
+                <a href="inicio sesión.html" class="icon-id-card">Inicio Sesion</a>
+            </div>
+        </nav>
+    </header>
+    <center>
+    <div class="contenedor-form" style="margin: 100px 0 30px 0;">
+        <div class="toggle">
+            <span> Crear Cuenta</span>
+        </div>
+        
+        <div class="formulario">
+            <h2>Iniciar Sesión</h2>
+            <form action="validar.php" method="POST">
+                <input type="text" id="usuario" name="usuario" placeholder=" &#128272; Usuario" required>
+                <input type="password" id="clave" name="clave" placeholder=" &#128272; Contraseña" required>
+                <input type="submit" value="Inicio Sesion">
+         </form>
+        </div>
+        
+        <div class="formulario">
+            <h2>Crea tu Cuenta</h2>
+            <form action="registrar.php" method="POST">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="input-48" required>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="input-48" required>
+                <input type="email" id="correo" name="email" placeholder="Correo" class="input-100" required>
+                <input type="text" id="usuario" name="usuario" placeholder="Usuario" class="input-48" required>
+                <input type="password" id="clave" name="clave" placeholder="Contraseña" class="input-48" required>
+                <input type="text" id="telefono" name="telefono" placeholder="Teléfono" class="input-100">
+                <input type="submit" value="Registrarme">
+            </form>
+        </div>
+        <div class="reset-password">
+            <a href="#">Olvide mi Contraseña?</a>
+        </div>
+    </div></center>
+    
+    <footer>
+		<div class="contenedor-footer">
+			<div class="content-foo">
+				<h4>Telefonos:</h4>
+				<p>(809)241-5444 <br> (809) 591 -5333 <br> (809) 481-7201</p>
+			</div>
+			<div class="content-foo">
+				<h4>Dirrección:</h4>
+				<p>Ave. Circunvalación Norte Km 4 1/2 <br> Santiago, República Dominicana</p>
+			</div>
+			<div class="content-foo">
+				<h4>Email:</h4>
+				<a href="https://outlook.live.com/mail/0/deeplink/compose?version=2020050302.05&popoutv2=1&leanbootstrap=1">info@serviciosromanosrl.com.do</a>
+			</div>
+		</div> <center>
+		<div class="redes">
+			<a href="https://www.facebook.com/Servicios-Romano-SRL-292749160861338/" class="icon-facebook"></a>
+			<a href="https://www.instagram.com/sromanosrl/?hl=es-la" class="icon-instagram"></a>
+			<a href="" class="icon-twitter"></a>
+			<a href="https://api.whatsapp.com/send?phone=8094817201&text=Hola%20me%20gustaría%20solicitar%20una%20información%20sobre%20ustedes" class="icon-whatsapp"></a>
+			<a class="icon-mail-alt" href="https://outlook.live.com/mail/0/deeplink/compose?version=2020050302.05&popoutv2=1&leanbootstrap=1"></a>
+		</div></center>
+		<h2 style="text-align: center; font-size: 34px; margin-top: 20px; color: rgb(241, 238, 238);">
+		&copy; Jeanmely Rojas || Anny Santana</h2>
+	</footer>
+    <script src="js/jquery-3.1.1.min.js"></script>    
+    <script src="js/sesion.js"></script>
+</body>
+</html>
